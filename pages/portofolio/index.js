@@ -1,15 +1,25 @@
 import BasicLayout from '@/components/templates/BasicLayout';
+import PortofolioLayout from '@/components/templates/PortofolioLayout';
+import classNames from 'classnames';
+import Image from 'next/image';
 import React from 'react';
 
 const Portofolio = () => {
   return (
-    <BasicLayout>
-      <section className="mt-20 space-y-20 pb-40">
-        <div className="font-passions">
-          <p className="text-6xl text-center text-sage-dark">Portofolio</p>
+    <PortofolioLayout>
+      <div className={classNames('flex justify-center')}>
+        <div className="p-2 bg-sage-soft bg-opacity-40 border-2 border-sage rounded-md text-sage w-fit">
+          <p className="text-center">Choose category below</p>
         </div>
-      </section>
-    </BasicLayout>
+      </div>
+      <div className={classNames('mt-20 grid grid-cols-3 gap-4')}>
+        {[...Array(9)].map((_, index) => (
+          <div className="w-full aspect-square relative overflow-hidden" key={index}>
+            <Image src={'/thumbnail/alvin-mahmudov-9_XfcBxf_uo-unsplash.jpg'} alt="image" fill className="object-cover" />
+          </div>
+        ))}
+      </div>
+    </PortofolioLayout>
   );
 };
 
