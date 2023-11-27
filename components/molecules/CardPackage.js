@@ -1,6 +1,7 @@
+import Link from 'next/link';
 import React from 'react';
 
-const CardPackage = () => {
+const CardPackage = ({ withButton = true }) => {
   return (
     <div className="w-full bg-beige p-3">
       <div className="w-full flex">
@@ -18,9 +19,13 @@ const CardPackage = () => {
             ))}
           </ul>
         </div>
-        <div className="flex justify-center">
-          <button className="bg-sage-soft text-white px-10 py-2 rounded-md hover:bg-opacity-90">Book</button>
-        </div>
+        {withButton && (
+          <div className="flex justify-center">
+            <Link href={`/package/coba`}>
+              <button className="bg-sage-soft text-white px-10 py-2 rounded-md hover:bg-opacity-90">Book</button>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );
