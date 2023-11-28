@@ -7,11 +7,11 @@ const Wedding = () => {
   return (
     <PortofolioLayout>
       <section>
-        <div className={classNames('mt-20 grid grid-cols-3 gap-4')}>
+        <div className={classNames('mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4')}>
           {[...Array(9)].map((_, index) => (
             <div className="w-full aspect-square relative overflow-hidden cursor-pointer" key={index}>
               <div className="w-full h-full bottom-0 absolute z-20 bg-gradient-to-t from-sage to-transparent">
-                <div className="flex w-full h-full items-end justify-center p-8 hover:pb-12 text-3xl hover:text-3xl transition-all delay-100 ease-in-out">
+                <div className="flex w-full h-full items-end justify-center p-8 hover:pb-12 text-2xl md:text-xl lg:text-3xl transition-all delay-100 ease-in-out">
                   <p className=" text-white">Rena & Albert</p>
                 </div>
               </div>

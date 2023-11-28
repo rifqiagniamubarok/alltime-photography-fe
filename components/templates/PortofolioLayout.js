@@ -23,11 +23,11 @@ const PortofolioLayout = ({ children }) => {
   ];
   return (
     <BasicLayout>
-      <section className="mt-20 space-y-4 mb-20">
+      <section className="mt-0 md:mt-20 space-y-2 md:space-y-4 mb-6 lg:mb-10">
         <div className="font-passions">
           <p className="text-6xl text-center text-sage-dark">Portofolio</p>
         </div>
-        <div className="flex justify-center gap-4 text-xl font-tenor">
+        <div className="flex justify-center gap-4 text-base md:text-xl font-tenor">
           {tabs.map(({ name, path }, index) => (
             <Link href={`/portofolio${path}`} key={index}>
               <p className={classNames(currentPath === `/portofolio${path}` ? 'text-sage-dark' : 'text-sage-soft', 'hover:text-sage')}>{name}</p>
