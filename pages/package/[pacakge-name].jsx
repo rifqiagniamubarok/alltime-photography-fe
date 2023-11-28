@@ -7,14 +7,14 @@ import React from 'react';
 const PackageDetail = () => {
   return (
     <PackageLayout>
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-        <div className="md:col-span-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div className="lg:col-span-2">
           <CardPackage withButton={false} />
         </div>
 
-        <div className="md:col-span-3 space-y-4">
+        <div className="lg:col-span-3 space-y-2 lg:space-y-4">
           <div className="space-y-4">
-            <p className="text-2xl md:text-3xl text-tenor text-sage-dark md:text-left text-center">Form Booking</p>
+            <p className="text-2xl lg:text-3xl text-tenor text-sage-dark md:text-left text-center">Form Booking</p>
             <p className="text-sm md:text-base text-tenor text-sage-soft">Submit your booking request. If we accept or refuse, we will contact you via WhatsApp or email.</p>
           </div>
           <div>

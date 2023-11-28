@@ -32,13 +32,13 @@ const Contact = () => {
   ];
   return (
     <BasicLayout>
-      <section className="mt-20 space-y-4 ">
+      <section className="md:mt-20 md:space-y-2 lg:space-y-4 ">
         <div className="font-passions">
           <p className="text-6xl text-center text-sage-dark">Contact</p>
         </div>
         <div className=" justify-center">
           <div className="flex justify-center">
-            <p className="text-center text-sage-soft w-1/2">Chat with us via WhatsApp for fast response to start a consultation</p>
+            <p className="text-center text-sage-soft w-full md:w-1/2">Chat with us via WhatsApp for fast response to start a consultation</p>
           </div>
           <div className="flex justify-center">
             <div className="flex flex-col gap-4 mt-4">
